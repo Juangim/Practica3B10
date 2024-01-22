@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie</title>
+    <style>
+
+        #contenedor{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .servicio{
+            width: 33%;
+            text-align: center;
+        }
+
+        .servicio img{
+            width: 40%;
+        }
+
+        .titulo{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: brown;
+        }
+
+        footer {
+            background-color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        footer h2 {
+            font-size: 0.9em;
+        }
+
+        #aviso {
+            width: 70%;
+            text-align: center;
+        }
+
+        #redes {
+            width: 30%; 
+            text-align: right;
+        }
+
+        #copy {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+
+        @media(max-width: 600px){
+            .servicio{
+                width: 100%;
+            }
+        }
+
+        @media(min-width: 601px) and (max-width: 800px){
+            .servicio{  
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1 class="titulo">Nuestros servicios</h1>
+        <div id="contenedor">
+            <div class="servicio">
+                <img src="images/img1.png" alt="">
+                <p>Asistencia</p>
+            </div>
+
+        <div class="servicio">
+            <img src="images/img2.jpg" alt="">
+            <p>Consultoria</p>
+        </div>
+
+        <div class="servicio">
+            <img src="images/img3.png" alt="">
+            <p>Apps Moviles</p>
+        </div>
+
+        <div class="servicio">
+            <img src="images/img4.jpg" alt="">
+            <p>Drones</p>
+        </div>
+
+        <div class="servicio">
+            <img src="images/img5.jfif" alt="">
+            <p>Diseño Web</p>
+        </div>
+
+        <div class="servicio">
+            <img src="images/img6.jpg" alt="">
+            <p>Soluciones</p>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div id="aviso">
+            <h2>Aviso Legal</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi aliquam minus vel iure cumque fugit? At maiores aut iusto, nostrum tenetur reiciendis repellat possimus commodi, dolores ea repudiandae sint reprehenderit.</p>
+        </div>
+        <div id="redes">
+            <h2>Enlaces</h2>
+            <p>Facebook</p>
+            <p>Instagram</p>
+        </div>
+    </footer>
+</body>
+</html>
